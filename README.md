@@ -30,9 +30,9 @@ Backend
 
 ### 실행 방법
 
-[Frontend 실행]('frontend/README.md')
+[Frontend 실행](frontend/README.md)
 
-[Backend 실행]('backend/README.md')
+[Backend 실행](backend/README.md)
 
 
 
