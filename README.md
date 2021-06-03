@@ -1,4 +1,4 @@
-## Woowahan Notion
+# Woowahan Notion
 
 
 
@@ -6,9 +6,9 @@
 
 
 
-### 기술
+## 기술
 
-Frontend
+### Frontend
 
 - React
 - Typescript
@@ -18,7 +18,7 @@ Frontend
 
 
 
-Backend
+### Backend
 
 - Express
 - Typescript
@@ -28,7 +28,7 @@ Backend
 
 
 
-### 실행 방법
+## 실행 방법
 
 [Frontend 실행](frontend/README.md)
 
@@ -36,15 +36,15 @@ Backend
 
 
 
-### 서비스 개요
+## 서비스 개요
 
-#### 인증
+### 인증
 
 소셜 로그인을 통한 인증
 
 
 
-#### 노트 작성
+### 노트 작성
 
 노션에서 많이 사용되는 블럭들을 지원 (아래 리스트에서 추가/삭제 될 수 있음)
 
