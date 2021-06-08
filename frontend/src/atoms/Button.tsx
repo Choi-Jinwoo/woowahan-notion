@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import colors from '../styles/colors';
 
@@ -39,7 +38,7 @@ const Button: React.FC<Props> = ({
   fontColor = colors.white,
   width = '200px',
   height = '30px',
-  fontSize = '',
+  fontSize = '1rem',
 }) => (
   <StyledButton
     onClick={onClick}

@@ -1,9 +1,12 @@
-import LoginForm from './organisms/LoginForm';
+import { Route, Switch } from 'react-router';
+import LoginPage from './pages/LoginPage';
 
 import './styles/base.css';
 
 export default function App() {
   return (
-    <LoginForm />
+    <Switch>
+      <Route path='/login' exact component={LoginPage} />
+    </Switch>
   );
 }
