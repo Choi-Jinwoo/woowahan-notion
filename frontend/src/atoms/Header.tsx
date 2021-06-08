@@ -7,7 +7,7 @@ type HeaderFontWeight = 'bold' | 'normal' | 'light';
 const handleFontSize = (size: HeaderFontSize): string => {
   switch (size) {
     case 'big':
-      return '2rem';
+      return '2.5rem';
 
     case 'medium':
       return '1.5rem';

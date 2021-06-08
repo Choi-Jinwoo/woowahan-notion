@@ -12,11 +12,11 @@ const StyledLoginForm = styled.div`
 `;
 
 const StyledHeaderBlock = styled.div`
-  margin: 40px 0;
+  margin-bottom: 40px;
 `
 
 const StyledTextBlock = styled.div`
-  margin-top: 60px;
+  margin-top: 40px;
 `;
 
 const LoginForm = () => (
