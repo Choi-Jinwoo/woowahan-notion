@@ -1,7 +1,9 @@
-function App() {
+import LoginForm from './organisms/LoginForm';
+
+import './styles/base.css';
+
+export default function App() {
   return (
-    <div className="App">우아한 노션</div>
+    <LoginForm />
   );
 }
-
-export default App;
