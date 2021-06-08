@@ -6,12 +6,21 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "googleapis": "^75.0.0",
+    "passport": "^0.4.1",
+    "passport-google-oauth": "^2.0.0",
+    "reflect-metadata": "^0.1.13",
+    "typedi": "^0.10.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.10",
     "@types/express": "^4.17.12",
-    "@types/node": "^15.9.0"
+    "@types/express-session": "^1.17.3",
+    "@types/node": "^15.9.0",
+    "@types/passport": "^1.0.6",
+    "@types/passport-google-oauth": "^1.0.41"
   },
   "scripts": {
     "build": "tsc",
