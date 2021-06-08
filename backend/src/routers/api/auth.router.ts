@@ -12,7 +12,7 @@ export default class AuthRouter extends BaseRouter {
     this.router.get('/google', passport.authenticate('google', { scope: ['email', 'profile'] }));
     this.router.get('/google/callback', passport.authenticate('google', {
       failureRedirect: '/',
-      successRedirect: 'https://www.naver.com'
+      successRedirect: 'http://localhost:3001',
     }));
   }
 }
