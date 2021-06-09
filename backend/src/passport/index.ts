@@ -2,13 +2,16 @@ import { Passport } from 'passport';
 import { OAuth2Strategy } from 'passport-google-oauth';
 import { Service } from 'typedi';
 import { GOOGLE } from '../../config';
+import FindUserService from '../user/core/find-user.service';
 
 
 @Service()
 export default class GooglePassport {
   private readonly _passport;
 
-  constructor() {
+  constructor(
+    private readonly findUserService: FindUserService,
+  ) {
     this._passport = new Passport();
 
     this._passport.use(new OAuth2Strategy({
@@ -24,11 +27,14 @@ export default class GooglePassport {
     });
 
     this._passport.deserializeUser<string>((id, done) => {
-      const mockUser = {
-        id: 'user',
-      };
-
-      done(null, mockUser);
+      findUserService.execute(id)
+        .then((user) => {
+          if (user === undefined) {
+            done('에러', null);
+          } else {
+            done(null, user);
+          }
+        })
     });
   }
 

@@ -20,3 +20,12 @@ export const GOOGLE = {
 export const SESSION = {
   SECRET: loadProcessENV('SESSION_SECRET'),
 }
+
+export const MYSQL = {
+  USERNAME: loadProcessENV('MYSQL_USERNAME'),
+  PASSWORD: loadProcessENV('MYSQL_PASSWORD'),
+  DATABASE: loadProcessENV('MYSQL_DATABASE'),
+  HOST: loadProcessENV('MYSQL_HOST'),
+  PORT: loadProcessENV('MYSQL_PORT'),
+  SYNC: loadProcessENV('MYSQL_SYNC'),
+}
