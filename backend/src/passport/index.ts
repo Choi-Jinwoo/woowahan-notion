@@ -3,6 +3,7 @@ import { OAuth2Strategy } from 'passport-google-oauth';
 import { Service } from 'typedi';
 import { GOOGLE } from '../../config';
 
+
 @Service()
 export default class GooglePassport {
   private readonly _passport;
@@ -18,12 +19,16 @@ export default class GooglePassport {
       return done(null, user);
     }));
 
-    this._passport.deserializeUser<string>((id, done) => {
-      done(null, id);
+    this._passport.serializeUser((user: Express.User, done) => {
+      done(null, user.id);
     });
 
-    this._passport.serializeUser<any>((id, done) => {
-      done(null, id);
+    this._passport.deserializeUser<string>((id, done) => {
+      const mockUser = {
+        id: 'user',
+      };
+
+      done(null, mockUser);
     });
   }
 
